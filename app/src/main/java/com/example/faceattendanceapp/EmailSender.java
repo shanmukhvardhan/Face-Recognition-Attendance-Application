@@ -18,8 +18,8 @@ import javax.mail.internet.MimeMultipart;
 
 public class EmailSender {
 
-    private static final String SYSTEM_EMAIL = "facemarkattendance@gmail.com";
-    private static final String APP_PASSWORD = "lygi lkry ujci atma";
+    private static final String SYSTEM_EMAIL = "email";
+    private static final String APP_PASSWORD = "password";
 
     public static void sendEmailWithAttachment(String recipientEmail, String subject, String bodyText, File fileAttachment) throws Exception {
         Properties props = new Properties();
