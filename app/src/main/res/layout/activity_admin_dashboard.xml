@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/user"
+            app:tint="#2F80E0"
+            android:background="@drawable/user_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:textColor="@android:color/white" />
+
+        <TextClock
+            android:id="@+id/timeTextClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="hh:mm:ss a"
+            android:format24Hour="HH:mm:ss"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:padding="20dp"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:onClick="openRegisterStudent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_student" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Register Student"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:onClick="openChangeInterval">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/timemanagement" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Change Interval"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:onClick="openViewAttendance">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/data" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="View Attendance"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:onClick="openManageStudents">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/collegestudents" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Manage Students"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:onClick="openSendMails">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mailsent" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Send Mails"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:onClick="openForgotPassword">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/forgotpassword" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Change Password"
+                android:textAlignment="center"
+                android:textColor="@color/main"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeStepGranularity="1sp" />
+        </LinearLayout>
+
+    </GridLayout>
+
+    <android.widget.Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_gradient"
+        app:backgroundTint="@null"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/arrowleft"
+        android:layout_gravity="start"
+        android:padding="4dp"
+        app:tint="@color/main"
+        android:layout_marginTop="-72dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Interval"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"/>
+
+    <!-- Image -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/timemachine"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <!-- Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Interval"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="start"/>
+
+    <!-- Start Time -->
+    <EditText
+        android:id="@+id/startTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:focusable="false"
+        android:clickable="true"
+        android:background="@drawable/edittext_glass_bg"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- End Time -->
+    <EditText
+        android:id="@+id/endTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:focusable="false"
+        android:clickable="true"
+        android:background="@drawable/edittext_glass_bg"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Change Button -->
+    <android.widget.Button
+        android:id="@+id/changeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_gradient"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="@null"/>
+</LinearLayout>

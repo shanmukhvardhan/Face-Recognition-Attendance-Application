@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:paddingTop="24dp"
+    android:paddingLeft="12dp">
+
+    <!-- Back Arrow -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/arrowleft"
+        app:tint="@color/main"
+        android:contentDescription="Back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="64dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Students"
+        android:layout_marginTop="60dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backArrow"
+        app:layout_constraintBottom_toBottomOf="@id/backArrow"
+        android:layout_marginStart="18dp" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Search Name or ID"
+        android:background="@drawable/edittext_glass_bg"
+        android:paddingStart="16dp"
+        android:paddingEnd="40dp"
+        android:textColor="#000000"
+        android:textColorHint="#6F6969"
+        android:drawableEnd="@drawable/search"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/emptyStateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search and Select the Student"
+        android:textColor="#94A3B8"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+    <!-- RecyclerView for Students -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/searchBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

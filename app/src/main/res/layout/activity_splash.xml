@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/splash_bg"> <!-- Dark background -->
+
+    <!-- Card Container -->
+    <LinearLayout
+        android:id="@+id/video_card"
+        android:layout_width="266dp"
+        android:layout_height="383dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background"
+        android:padding="10dp"
+        android:elevation="6dp"
+        android:clipToOutline="true"
+        android:backgroundTintMode="src_in">
+
+        <!-- Video View -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieView"
+            android:layout_width="290dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            app:lottie_fileName="loader.json"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_renderMode="hardware" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FaceMark"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:textColor="@color/main"
+            android:fontFamily="@font/bold"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".RegisterStudentActivity"
+    android:orientation="vertical">
+
+    <!-- Top Title -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:contentDescription="Back"
+        android:focusable="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/arrowleft"
+        app:tint="@color/main" />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Student"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Card Layout -->
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/glass_card_bg"
+        android:padding="24dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:elevation="8dp">
+
+        <!-- Image at Top -->
+        <ImageView
+            android:id="@+id/illustration"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:src="@drawable/add"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Enter Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Details"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Student Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_glass_bg"
+            android:padding="2dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user"
+                android:layout_gravity="center"
+                app:tint="#6F6969" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Student Name"
+                android:inputType="textPersonName"
+                android:textColor="#6F6969"
+                android:textColorHint="#6F6969"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+
+        <!-- Student ID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_glass_bg"
+            android:padding="2dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user"
+                app:tint="#6F6969"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/idInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Student ID"
+                android:inputType="text"
+                android:textColor="#6F6969"
+                android:textColorHint="#6F6969"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_glass_bg"
+            android:padding="2dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/mail"
+                app:tint="#6F6969"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#6F6969"
+                android:textColorHint="#6F6969"
+                android:paddingStart="8dp" />
+        </LinearLayout>
+
+        <!-- Department -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittext_glass_bg"
+            android:padding="2dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/home"
+                app:tint="#6F6969"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/deptInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Department"
+                android:inputType="text"
+                android:textColor="#6F6969"
+                android:textColorHint="#6F6969"
+                android:paddingStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <android.widget.Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:background="@drawable/button_gradient"
+            android:padding="12dp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+</LinearLayout>
