@@ -106,5 +106,5 @@ To ensure the app's atomic writes and admin controls function correctly, go to t
 3.Upon first launch, use the Admin panel to register your first admin email/password, then begin registering faces!
 
 ## 👨‍💻 Developed By
-- ShanmukhVardhan(https://github.com/shanmukhvardhan)
-- ShanmukhaVarun(https://github.com/Shanmukha-varun)
+- Shanmukh Vardhan(https://github.com/shanmukhvardhan)
+- Shanmukha Varun(https://github.com/Shanmukha-varun)
